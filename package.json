@@ -12,7 +12,9 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "lint": "eslint **/*.js --quiet",
+    "test": "npm run lint"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,11 @@
   "homepage": "https://github.com/singha53/the-omics-hub#readme",
   "devDependencies": {
     "concurrently": "^3.5.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
