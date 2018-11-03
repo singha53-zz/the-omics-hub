@@ -6,3 +6,7 @@ branches:
 cache:
   directories:
     - node_modules
+deploy:
+  provider: heroku
+  api_key:
+    secure: "YOUR ENCRYPTED API KEY"
