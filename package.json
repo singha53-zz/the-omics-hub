@@ -1,12 +1,8 @@
 {
-  "name": "the-omics-hub",
+  "name": "mern",
   "version": "1.0.0",
-  "description": "a platform for data analytics and collaborative research",
+  "description": "",
   "main": "server.js",
-  "engines": {
-    "node": "v8.12.0",
-    "npm": "6.4.1"
-  },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -15,39 +11,18 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build",
-    "lint": "eslint **/*.js --quiet",
-    "test": "npm run lint"
+    "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/singha53/the-omics-hub.git"
-  },
-  "keywords": [
-    "data analytics",
-    "computational biology",
-    "biomarkers"
-  ],
-  "author": "Amrit Singh",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/singha53/the-omics-hub/issues"
-  },
-  "homepage": "https://github.com/singha53/the-omics-hub#readme",
   "devDependencies": {
     "concurrently": "^3.5.0",
-    "eslint": "^5.8.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1",
-    "gulp": "^3.9.1",
     "nodemon": "^1.11.0"
   },
   "dependencies": {
     "axios": "^0.16.2",
     "express": "^4.16.3",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.0.17"
+    "mongoose": "^5.0.17",
+    "if-env": "^1.0.4"
   }
 }
