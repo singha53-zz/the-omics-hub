@@ -12,7 +12,7 @@
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build",
-    "lint": "eslint src/*.js --quiet",
+    "lint": "./node_modules/.bin/eslint src/*.js",
     "test": "npm run lint"
   },
   "author": "",
