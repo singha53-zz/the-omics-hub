@@ -12,7 +12,8 @@
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build",
-    "test": "npm run lint && NODE_ENV=test mocha -u tdd --reporter spec --exit"
+    "lint": "eslint \"**/*.js\" --fix",
+    "test": "npm run lint"
   },
   "author": "",
   "license": "ISC",
@@ -28,7 +29,7 @@
   "dependencies": {
     "axios": "^0.16.2",
     "express": "^4.16.3",
-    "mongoose": "^5.0.17",
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "mongoose": "^5.0.17"
   }
 }
