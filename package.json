@@ -12,6 +12,7 @@
     "install": "cd client && yarn install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build",
+    "lint": "eslint ./src --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
