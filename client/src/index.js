@@ -1,11 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { createBrowserHistory } from 'history';
+import { Router, Route, Switch } from 'react-router-dom';
 
-import indexRoutes from "./routes/index.jsx";
+import indexRoutes from './routes/index';
 
-import "./assets/scss/material-kit-react.css?v=1.3.0";
+import './assets/scss/material-kit-react.css?v=1.3.0';
 
 var hist = createBrowserHistory();
 
