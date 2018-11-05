@@ -1,13 +1,35 @@
+// http://eslint.org/docs/user-guide/configuring
 module.exports = {
-  extends: 'airbnb',
-  rules: {
-  "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+  root: true,
+  parserOptions: {
+    sourceType: 'module',
+    parser: 'babel-eslint',
   },
   env: {
-    node: true,
-    browser: true
+    browser: true,
   },
-  "globals": {
-    "document": false
+  // required to lint *.vue files
+  plugins: [
+    'react'
+  ],
+  extends: [
+    'eslint:recommended',
+    'airbnb',
+    'plugin:react/recommended'
+  ],
+  // add your custom rules here
+  rules: {
+    // allow debugger during development
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'import/extensions': ['error', 'always', {
+      js: 'never'
+    }]
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.js','.jsx']
+      }
+    },
   }
-};
+}
