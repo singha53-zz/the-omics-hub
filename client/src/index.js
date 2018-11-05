@@ -1,3 +1,4 @@
+import {} from 'dotenv/config'
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import { createBrowserHistory } from 'history';
@@ -13,8 +14,8 @@ ReactDOM.render(
   // <Router history={hist}>
   <Router>
     <Switch>
-      {indexRoutes.map((prop, key) => return <Route exact path={prop.path} key={key} component={prop.component} />;
-      )}
+      {indexRoutes.map((prop, key) => {return <Route exact path={prop.path} key={key} component={prop.component} />;
+      })}
     </Switch>
   </Router>,
   document.getElementById('root')
