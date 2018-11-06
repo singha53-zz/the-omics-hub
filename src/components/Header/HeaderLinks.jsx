@@ -12,6 +12,8 @@ import Tooltip from "@material-ui/core/Tooltip";
 // @material-ui/icons
 import { Apps, CloudDownload } from "@material-ui/icons";
 
+import { SpeakerNotes } from "@material-ui/icons";
+
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
 import Button from "components/CustomButtons/Button.jsx";
@@ -33,14 +35,35 @@ function HeaderLinks({ ...props }) {
           buttonIcon={Apps}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
-              All components
+              Data-types
             </Link>,
             <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
+              href=""
               target="_blank"
               className={classes.dropdownLink}
             >
-              Documentation
+              Methods
+            </a>,
+            <a
+              href=""
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Performance evaluation
+            </a>,
+            <a
+              href=""
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Biologial enrichment
+            </a>,
+            <a
+              href=""
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Manuscript write-up
             </a>
           ]}
         />
@@ -52,10 +75,10 @@ function HeaderLinks({ ...props }) {
           target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+          <SpeakerNotes className={classes.icons} /> Tutorials
         </Button>
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -105,7 +128,7 @@ function HeaderLinks({ ...props }) {
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }

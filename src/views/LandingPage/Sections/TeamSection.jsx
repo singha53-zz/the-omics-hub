@@ -16,9 +16,9 @@ import CardFooter from "components/Card/CardFooter.jsx";
 
 import teamStyle from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.jsx";
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import team1 from "assets/img/team/ubc.jpg";
+import team2 from "assets/img/team/proof.png";
+import team3 from "assets/img/team/hli.jpeg";
 
 class TeamSection extends React.Component {
   render() {
@@ -30,25 +30,24 @@ class TeamSection extends React.Component {
     );
     return (
       <div className={classes.section}>
-        <h2 className={classes.title}>Here is our team</h2>
+        <h2 className={classes.title}>Affiliations</h2>
         <div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={team1} alt="..." className={imageClasses} />
+                  <a href ='https://www.ubc.ca/' target='_blank' rel="noopener noreferrer">
+                    <img src={team1} alt="..." className={imageClasses} />
+                  </a>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Gigi Hadid
+                  University of British Columbia
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>Vancouver</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    Among the top 20 public universities in the world. Motto: Tuum Est (It is yours)
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -57,21 +56,27 @@ class TeamSection extends React.Component {
                     color="transparent"
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-twitter"} />
+                    <a href='https://twitter.com/UBC' target='_black'>
+                      <i className={classes.socials + " fab fa-twitter"} />
+                    </a>
                   </Button>
                   <Button
                     justIcon
                     color="transparent"
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-instagram"} />
+                    <a href='https://www.instagram.com/universityofbc/?hl=en' target='_black'>
+                      <i className={classes.socials + " fab fa-instagram"} />
+                    </a>
                   </Button>
                   <Button
                     justIcon
                     color="transparent"
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-facebook"} />
+                    <a href='https://www.facebook.com/universityofbc/' target='_black'>
+                      <i className={classes.socials + " fab fa-facebook"} />
+                    </a>
                   </Button>
                 </CardFooter>
               </Card>
@@ -79,19 +84,18 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={team2} alt="..." className={imageClasses} />
+                  <a href ='http://www.proofcentre.ca/' target='_blank' rel="noopener noreferrer">
+                    <img src={team2} alt="..." className={imageClasses} />
+                  </a>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Christian Louboutin
+                  PROOF Centre of Excellence
                   <br />
-                  <small className={classes.smallTitle}>Designer</small>
+                  <small className={classes.smallTitle}>Vancouver</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    The PRevention Of Organ Failure (PROOF) Centre is a not-for-profit that develops blood tests using "omics" technologies for kidney, heart and lung disease. 
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -100,14 +104,18 @@ class TeamSection extends React.Component {
                     color="transparent"
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-twitter"} />
+                    <a href='https://twitter.com/proofcentre' target='_black'>
+                      <i className={classes.socials + " fab fa-twitter"} />
+                    </a>
                   </Button>
                   <Button
                     justIcon
                     color="transparent"
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-linkedin"} />
+                    <a href='https://www.linkedin.com/company/proof-centre/?originalSubdomain=ca' target='_black'>
+                      <i className={classes.socials + " fab fa-linkedin"} />
+                    </a>
                   </Button>
                 </CardFooter>
               </Card>
@@ -115,19 +123,18 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <img src={team3} alt="..." className={imageClasses} />
+                  <a href ='https://www.hli.ubc.ca/' target='_blank' rel="noopener noreferrer">
+                    <img src={team3} alt="..." className={imageClasses} />
+                  </a>
                 </GridItem>
                 <h4 className={classes.cardTitle}>
-                  Kendall Jenner
+                  Centre of Heart Lung Innovation
                   <br />
-                  <small className={classes.smallTitle}>Model</small>
+                  <small className={classes.smallTitle}>Vancouver</small>
                 </h4>
                 <CardBody>
                   <p className={classes.description}>
-                    You can write here details about one of your team members.
-                    You can give more details about what they do. Feel free to
-                    add some <a href="#pablo">links</a> for people to be able to
-                    follow them outside the site.
+                    HLI is a translational research centre where multidisciplinary reserach is conducted for various human diseases.
                   </p>
                 </CardBody>
                 <CardFooter className={classes.justifyCenter}>
@@ -136,21 +143,18 @@ class TeamSection extends React.Component {
                     color="transparent"
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-twitter"} />
+                    <a href='https://twitter.com/hlistpauls?lang=en' target='_black'>
+                      <i className={classes.socials + " fab fa-twitter"} />
+                    </a>
                   </Button>
                   <Button
                     justIcon
                     color="transparent"
                     className={classes.margin5}
                   >
-                    <i className={classes.socials + " fab fa-instagram"} />
-                  </Button>
-                  <Button
-                    justIcon
-                    color="transparent"
-                    className={classes.margin5}
-                  >
-                    <i className={classes.socials + " fab fa-facebook"} />
+                    <a href='https://www.facebook.com/HeartLungInnovation/' target='_black'>
+                      <i className={classes.socials + " fab fa-facebook"} />
+                    </a>
                   </Button>
                 </CardFooter>
               </Card>

@@ -65,16 +65,14 @@ function Footer({ ...props }) {
           </List>
         </div>
         <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
+          &copy; {1900 + new Date().getYear()}, made using React templates from {" "}
           <a
             href="https://www.creative-tim.com"
             className={aClasses}
             target="_blank"
           >
             Creative Tim
-          </a>{" "}
-          for a better web.
+          </a>.
         </div>
       </div>
     </footer>
