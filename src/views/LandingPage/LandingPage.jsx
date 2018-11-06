@@ -47,17 +47,17 @@ class LandingPage extends React.Component {
               <GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>The Omics Hub</h1>
                 <h4>
-                  A analytics platform for researchers to analyze omics datasets, share and build reproducible workflows. 
+                  An analytics platform for researchers to analyze omics datasets, share and build reproducible workflows. 
                 </h4>
                 <br />
                 <Button
                   color="success"
                   size="lg"
-                  href="/login-page"
+                  href="/dashboard-page"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fas fa-play" />Analyze my data
+                  <i className="fas fa-table" />Analyze my data
                 </Button>
               </GridItem>
             </GridContainer>
