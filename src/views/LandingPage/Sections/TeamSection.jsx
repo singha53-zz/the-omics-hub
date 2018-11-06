@@ -36,7 +36,7 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <a href ='https://www.ubc.ca/' target='_blank'>
+                  <a href ='https://www.ubc.ca/' target='_blank' rel="noopener noreferrer">
                     <img src={team1} alt="..." className={imageClasses} />
                   </a>
                 </GridItem>
@@ -84,7 +84,7 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <a href ='http://www.proofcentre.ca/' target='_blank'>
+                  <a href ='http://www.proofcentre.ca/' target='_blank' rel="noopener noreferrer">
                     <img src={team2} alt="..." className={imageClasses} />
                   </a>
                 </GridItem>
@@ -123,7 +123,7 @@ class TeamSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <Card plain>
                 <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                  <a href ='https://www.hli.ubc.ca/' target='_blank'>
+                  <a href ='https://www.hli.ubc.ca/' target='_blank' rel="noopener noreferrer">
                     <img src={team3} alt="..." className={imageClasses} />
                   </a>
                 </GridItem>
