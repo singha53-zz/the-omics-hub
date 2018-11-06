@@ -22,7 +22,7 @@ import ProductSection from "./Sections/ProductSection.jsx";
 import TeamSection from "./Sections/TeamSection.jsx";
 import WorkSection from "./Sections/WorkSection.jsx";
 
-const dashboardRoutes = [];
+const dashboardRoutes = ['http://www.proofcentre.ca/'];
 
 class LandingPage extends React.Component {
   render() {
@@ -51,13 +51,13 @@ class LandingPage extends React.Component {
                 </h4>
                 <br />
                 <Button
-                  color="danger"
+                  color="success"
                   size="lg"
-                  href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                  href="/login-page"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fas fa-play" />Watch video
+                  <i className="fas fa-play" />Analyze my data
                 </Button>
               </GridItem>
             </GridContainer>
