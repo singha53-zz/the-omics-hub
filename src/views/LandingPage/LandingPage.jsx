@@ -51,13 +51,13 @@ class LandingPage extends React.Component {
                 </h4>
                 <br />
                 <Button
-                  color="danger"
+                  color="success"
                   size="lg"
                   href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fas fa-play" />Watch video
+                  <i className="fas fa-table" />Analyze my data
                 </Button>
               </GridItem>
             </GridContainer>
